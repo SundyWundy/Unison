@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textColorHint="@color/hint"
+            android:hint="Enter Email"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_background"
+            android:padding="10dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textColorHint="@color/hint"
+            android:hint="Enter Password"
+            android:textColor="@color/white"
+
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_background"
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/password_again"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textColorHint="@color/hint"
+            android:hint="Confirm Password"
+            android:textColor="@color/white"
+
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input_background"
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Sign-Up"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:textAllCaps="false"
+            android:textSize="21sp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errmsg"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="#FF0000"
+        >
+    </TextView>
+</RelativeLayout>

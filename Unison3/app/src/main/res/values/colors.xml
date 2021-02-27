@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="event_color_01">#59dbe0</color>
+    <color name="event_color_02">#f57f68</color>
+    <color name="event_color_03">#87d288</color>
+    <color name="event_color_04">#f8b552</color>
+
+    <color name="redEvent">#FF4D4D</color>
+    <color name="blueEvent">#0080ff</color>
+    <color name="greenEvent">#00ff80</color>
+    <color name="orangeEvent">#FFA500</color>
+    <color name="greyEvent">#808080</color>
+    <color name="myEvent">#00ffff</color>
+
+
+
+    <color name="toolbar">#efefef</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="accent">#2789e4</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <color name="colorPrimary2">#777CADAD</color>
+    <color name="colorPrimaryDark2">#0C2122</color>
+    <color name="colorAccent2">#6DD6BE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="hint">#AAAAAA</color>
+
+
+    <color name="topColor">#1F1C26</color>
+    <color name="bottomColor">#453F61</color>
+    <color name="sign_up">#52D8D8D8</color>
+</resources>

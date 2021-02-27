@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent2"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <com.alamkanak.weekview.WeekView
+            android:id="@+id/weekView"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:eventTextColor="@android:color/white"
+            app:textSize="12sp"
+            app:hourHeight="60dp"
+            app:headerColumnPadding="8dp"
+            app:headerColumnTextColor="@color/toolbar_text"
+            app:headerRowPadding="12dp"
+            app:columnGap="8dp"
+            app:noOfVisibleDays="7"
+            app:headerRowBackgroundColor="@color/toolbar"
+            app:dayBackgroundColor="#05000000"
+            app:todayBackgroundColor="#1848adff"
+            app:headerColumnBackground="#ffffffff"
+            app:todayHeaderTextColor="@color/accent"
+            />
+        <!--
+            app:dayBackgroundColor="#05000000"  THESE ARE THE INDIVIDUAL BOXES
+
+
+
+        -->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/floater"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="340dp"
+            android:src="@drawable/ic_control_point_black_24dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent2"
+            />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_marginTop="55dp"
+        android:layout_width="120dp"
+        android:layout_height="600dp"
+        android:layout_gravity="start"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profilebutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_person_grey_24dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/viewid"
+                android:text="Select View"
+                android:textSize="20dp"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/viewselectid"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewid"
+                android:checkedButton="@id/sevendayid"
+                >
+                <RadioButton
+                    android:id="@+id/dayviewid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="One Day" />
+                <RadioButton
+                    android:id="@+id/threedayid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Three Days" />
+                <RadioButton
+                    android:id="@+id/sevendayid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seven Days" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/caltxt"
+                android:text="Calendars"
+                android:textSize="20dp"
+                android:layout_below="@+id/viewid"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/radioCals"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/caltxt"
+                android:checkedButton="@id/radiopersonalCal"
+                >
+                <RadioButton
+                    android:id="@+id/radiopersonalCal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal" />
+                <RadioButton
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 1" />
+                <RadioButton
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Group 2" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/invitetxt"
+                android:text="Invites"
+                android:textSize="20dp"
+                android:layout_below="@+id/caltxt"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:id="@+id/invites"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invitetxt"
+                >
+                <RadioButton
+                    android:id="@+id/radioRinvites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recieved Invites" />
+                <RadioButton
+                    android:id="@+id/radioSinvites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Invite" />
+            </RadioGroup>
+        </RelativeLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:eventTextColor="@android:color/white"
+        app:textSize="12sp"
+        app:hourHeight="60dp"
+        app:headerColumnPadding="8dp"
+        app:headerColumnTextColor="@color/toolbar_text"
+        app:headerRowPadding="12dp"
+        app:columnGap="8dp"
+        app:noOfVisibleDays="3"
+        app:headerRowBackgroundColor="@color/toolbar"
+        app:dayBackgroundColor="#05000000"
+        app:todayBackgroundColor="#1848adff"
+        app:headerColumnBackground="#ffffffff"
+        app:todayHeaderTextColor="@color/accent" />
+
+    <Button
+        android:id="@+id/floater"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="300dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        />
+
+</RelativeLayout>
+-->

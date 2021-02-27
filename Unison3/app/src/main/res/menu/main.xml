@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyActivity">
+    <item android:id="@+id/action_today"
+        android:title="@string/action_today"
+        android:icon="@drawable/ic_today_white_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/chatid"
+            android:title="Chat"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            />
+        <item android:id="@+id/leaveid"
+            android:title="Leave Group"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            />
+        <item android:id="@+id/logoutid"
+            android:title="Logout"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            />
+    </group>
+</menu>

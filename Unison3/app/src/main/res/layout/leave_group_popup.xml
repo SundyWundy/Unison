@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bx"
+    >
+
+    <TextView
+        android:id="@+id/informerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63dp"
+        android:text="Which group would you like to leave?"
+        />
+    <RadioGroup
+        android:id="@+id/invitewindowradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/informerID"
+        android:layout_marginLeft="80dp"
+        android:padding="15dp"
+        >
+        <RadioButton
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group 1"
+            />
+        <RadioButton
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group 2"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/informer3"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/invitewindowradiogroup"
+        android:layout_marginLeft="35dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:backgroundTint="#0000"
+        android:background="#0000"
+        android:stateListAnimator="@null"
+        android:text=""
+        />
+    <Button
+        android:id="@+id/confirmLeave"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp"
+        android:text="Leave"
+        android:background="@drawable/sign_up_background"
+        />
+    <Button
+        android:id="@+id/cancelLeave"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="120dp"
+        android:text="Cancel"
+        android:background="@drawable/sign_up_background"
+        />
+
+
+</RelativeLayout>

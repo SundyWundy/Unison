@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bx"
+    >
+
+    <TextView
+        android:id="@+id/informer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+
+        android:text="Invite another user to a shared group calendar, just enter their email below."
+        />
+
+    <EditText
+        android:id="@+id/invite_email"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColorHint="@color/hint"
+        android:hint="Email"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_up_background"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/informer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="20dp"
+
+        android:text="Choose which group calendar you want to invite them to."
+        />
+    <RadioGroup
+        android:id="@+id/invitewindowradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="80dp"
+        android:padding="15dp"
+        >
+        <RadioButton
+            android:id="@+id/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group 1"
+            />
+        <RadioButton
+            android:id="@+id/group2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group 2"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/informer3"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:backgroundTint="#0000"
+        android:background="#0000"
+        android:stateListAnimator="@null"
+        android:text=""
+        />
+
+    <Button
+        android:id="@+id/invite_send"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="210dp"
+        android:text="Send"
+        android:background="@drawable/sign_up_background"
+        />
+
+
+</RelativeLayout>
